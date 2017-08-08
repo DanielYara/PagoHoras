@@ -49,11 +49,11 @@ public class PagoHoras {
             } else {
                 int d = t/40;
                 int a = t % 40;
-                if(d > 1){
+                //if(d > 1){
                 totalSalario = (40*h) + ((8*2*h) + ((d-1)*40*3*h) + ((a-8)*3*h));
-            } else{
-                totalSalario = (40*h) + ((8*2*h) + ((a-8)*3*h));   
-                }
+            //} else{
+                //totalSalario = (40*h) + ((8*2*h) + ((a-8)*3*h));   
+                //}
             }
                 }
         return totalSalario;

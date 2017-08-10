@@ -22,6 +22,7 @@ public class PagoHoras {
         String nombre = null; 
         double h = 0;
         int t = 0;
+        double salario = 0;
         Scanner teclado = new Scanner(System.in);
         
         System.out.println("Ingrese el nombre del trabajador: ");
@@ -33,9 +34,9 @@ public class PagoHoras {
         System.out.println("Ingrese el número de horas trabajadas: ");
         t = teclado.nextInt();
         
-        calcularSalario(t, h);
+        salario = calcularSalario(t, h);
         
-        System.out.println("La cantidad de dinero a pagarle al Sr. " + nombre + " es: " + calcularSalario(t, h));
+        System.out.println("La cantidad de dinero a pagarle al Sr. " + nombre + " es: " + salario);
        
 }
     public static double calcularSalario(int t, double h){
